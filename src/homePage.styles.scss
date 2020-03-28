@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 80px;
+  padding: 20px 80px;
 }
 
 .directory-menu {
@@ -15,7 +15,7 @@
 .menu-item {
   min-width: 30%;
   height: 240px;
-  float: 1 1 auto;
+  flex: 1 1 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +36,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     border: 1px solid black;
 
     .title {
