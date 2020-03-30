@@ -6,7 +6,7 @@ import HomePage from './pages/homepage/homepage.component';
 class App extends Component {
   render() {
     return (
-      <HomePage />
+      <HomePage/>
     );
   }
 }
