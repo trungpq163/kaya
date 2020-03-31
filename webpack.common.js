@@ -4,7 +4,8 @@ module.exports = {
   entry: ['./src/index.js', './src/index.scss'],
   output: {
     filename: 'js/index.js',
-    path: path.resolve(__dirname, 'public')
+    path: path.resolve(__dirname, 'public'),
+    publicPath: '/'
   },
   module: {
     rules: [{
@@ -32,6 +33,6 @@ module.exports = {
     }]
   },
   performance: {
-    hints: process.env.NODE_ENV === 'production' ? "warning" : false
+    hints: process.env.NODE_ENV === 'production' ? 'warning' : false
   }
-}
+};

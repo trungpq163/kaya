@@ -8,7 +8,8 @@ module.exports = merge(common, {
   devtool: 'inline-source-map',
   devServer: {
     contentBase: './public',
-    hot: true
+    hot: true,
+    historyApiFallback: true,
   },
   module: {
     rules: [{
@@ -31,4 +32,4 @@ module.exports = merge(common, {
       template: './src/assets/index.html'
     })
   ]
-})
+});
