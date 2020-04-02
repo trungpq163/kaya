@@ -11,7 +11,10 @@ module.exports = {
     rules: [{
       test: /\.(js|jsx)$/,
       loader: 'babel-loader',
-      exclude: [/node_modules/]
+      exclude: [/node_modules/],
+      resolve: {
+        extensions: ['.js', '.jsx']
+      }
     }, {
       test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,
       use: [

@@ -3,7 +3,7 @@ const common = require('./webpack.common.js');
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = merge(common, {
@@ -14,8 +14,8 @@ module.exports = merge(common, {
       test: /\.(scss|sass|css)$/,
       use: [
         MiniCssExtractPlugin.loader,
-        "css-loader",
-        "sass-loader"
+        'css-loader',
+        'sass-loader'
       ]
     }]
   },
@@ -24,7 +24,7 @@ module.exports = merge(common, {
       cleanOnceBeforeBuildPatterns: ['public/js', 'public/css'],
     }),
     new MiniCssExtractPlugin({
-      filename: "css/index.css"
+      filename: 'css/index.css'
     }),
     new HtmlWebpackPlugin({
       title: 'Berrys',
