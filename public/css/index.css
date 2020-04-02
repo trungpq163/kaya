@@ -1,6 +1,6 @@
 body{margin:0;padding:0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}code{font-family:source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace}
 
-body{font-family:'Open Sans Condensed';padding:20px 40px}a{text-decoration:none;color:black}
+body{font-family:'Open Sans Condensed';padding:20px 40px}a{text-decoration:none;color:black}*{box-sizing:border-box}
 
 .menu-item{min-width:30%;height:240px;flex:1 1 auto;display:flex;align-items:center;justify-content:center;border:1px solid black;margin:0 7.5px 15px;overflow:hidden}.menu-item:hover{cursor:pointer}.menu-item:hover .background-image{transform:scale(1.1);transition:transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95)}.menu-item:hover .content{opacity:0.9}.menu-item.large{height:380px}.menu-item:first-child{margin-right:7.5px}.menu-item:last-child{margin-left:7.5px}.menu-item .background-image{width:100%;height:100%;background-size:cover;background-position:center}.menu-item .content{height:90px;padding:0 25px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid black;background-color:white;opacity:0.7;position:absolute}.menu-item .content .title{font-weight:bold;margin:0 6px 0;font-size:22px;color:#4a4a4a}.menu-item .content .subtitle{font-weight:lighter;font-size:16px}
 
@@ -12,14 +12,14 @@ body{font-family:'Open Sans Condensed';padding:20px 40px}a{text-decoration:none;
 
 .collection-preview{display:flex;flex-direction:column;margin-bottom:30px}.collection-preview .title{font-size:28px;margin-bottom:25px}.collection-preview .preview{display:flex;justify-content:space-between}
 
-.header{height:70px;width:100%;display:flex;justify-content:space-between;margin-bottom:25px}.header .logo-container{height:100%;width:70px;padding:25px}.header .options{width:50%;height:100%;display:flex;align-items:center;justify-content:flex-end}.header .options .option{padding:10px 15px}
-
 .group{position:relative;margin:45px 0}.group .form-input{background:none;background-color:white;color:grey;font-size:18px;padding:10px 10px 10px 5px;display:block;width:100%;border:none;border-radius:0;border-bottom:1px solid grey;margin:25px 0}.group .form-input:focus{outline:none}.group .form-input:focus ~ .form-input-label{top:-14px;font-size:12px;color:#000}.group input[type='password']{letter-spacing:0.3em}.group .form-input-label{color:grey;font-size:16px;font-weight:normal;position:absolute;pointer-events:none;left:5px;top:10px;transition:300ms ease all}.group .form-input-label.shrink{top:-14px;font-size:12px;color:#000}
 
-.custom-button{min-width:165px;width:auto;height:50px;letter-spacing:0.5px;line-height:50px;padding:0 35px 0 35px;font-size:15px;background-color:black;color:white;text-transform:uppercase;font-family:'Open Sans Condensed';font-weight:bolder;border:none;cursor:pointer}.custom-button:hover{background-color:white;color:black;border:1px solid black}
+.custom-button{min-width:165px;width:auto;height:50px;letter-spacing:0.5px;line-height:50px;padding:0 35px 0 35px;font-size:15px;background-color:black;color:white;text-transform:uppercase;font-family:'Open Sans Condensed';font-weight:bolder;border:none;cursor:pointer}.custom-button:hover{background-color:white;color:black;border:1px solid black}.custom-button.google-sign-in{background-color:#4285f4;color:white}.custom-button.google-sign-in:hover{background-color:#357ae8;border:none}
 
-.sign-in{width:30vw;display:flex;flex-direction:column}
+.sign-in{width:380px;display:flex;flex-direction:column}.sign-in .title{margin:10px 0}.sign-in .button{display:flex;justify-content:space-between}
 
+
+.header{height:70px;width:100%;display:flex;justify-content:space-between;margin-bottom:25px}.header .logo-container{height:100%;width:70px;padding:25px}.header .options{width:50%;height:100%;display:flex;align-items:center;justify-content:flex-end}.header .options .option{padding:10px 15px;cursor:pointer}
 
 
 
