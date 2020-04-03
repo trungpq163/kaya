@@ -20,6 +20,7 @@ body{font-family:'Open Sans Condensed';padding:20px 40px}a{text-decoration:none;
 
 .sign-up{display:flex;flex-direction:column;width:380px}.sign-up .title{margin:10px 0}
 
+.sign-in-and-sign-up{width:850px;display:flex;justify-content:space-between;margin:30px auto}
 
 .header{height:70px;width:100%;display:flex;justify-content:space-between;margin-bottom:25px}.header .logo-container{height:100%;width:70px;padding:25px}.header .options{width:50%;height:100%;display:flex;align-items:center;justify-content:flex-end}.header .options .option{padding:10px 15px;cursor:pointer}
 
