@@ -6,10 +6,13 @@ import CollectionPreview from '../collection-preview/collection-preview.componen
 
 import { selectCollectionsForPreview } from '../../redux/shop/shop.selector';
 
+import CarouselPage from '../../components/carousel/carousel.component';
+
 import './collection-overview.styles.scss';
 
 const CollectionsOverView = ({ collections }) => (
   <div className="collections-overview">
+    <div><CarouselPage/></div>
     {
       collections.map(({ id, ...otherCollectionProps }) => (
         <CollectionPreview key={id} {...otherCollectionProps} />
