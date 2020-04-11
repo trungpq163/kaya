@@ -85,22 +85,15 @@ const Navbar = ({ currentUser, hidden }) => {
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     {
                       currentUser ? (
-                        <OptionLink as='div' onClick={() => auth.signOut()}>
-                          <a className="nav-link">
-                            Logout
-                          </a>
+                        <OptionLink as='div' className="nav-link" onClick={() => auth.signOut()}>
+                          Logout
                         </OptionLink>
                       ) : (
-                        <OptionLink to='/signin'>
-                          <a className="nav-link">
+                        <OptionLink className="nav-link" to='/signin'>
                             Signin
-                          </a>
                         </OptionLink>
                       )
                     }
-                    {/* <a className="nav-link" href="/">
-                      Login
-                    </a> */}
                   </li>
                   <CartIcon />
                   {/* <a
