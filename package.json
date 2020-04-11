@@ -11,7 +11,11 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
+    "@bit/bondz.react-epic-spinners.atom-spinner": "^0.3.0",
+    "@bit/react-bootstrap.react-bootstrap.carousel": "^1.0.0",
+    "@bit/reactstrap.reactstrap.uncontrolled-carousel": "^7.1.0",
     "@brainhubeu/react-carousel": "^1.13.26",
+    "add": "^2.0.6",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "firebase": "^7.13.1",
@@ -19,14 +23,14 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
-    "react-responsive-carousel": "^3.1.57",
     "react-router-dom": "^5.1.2",
     "react-stripe-checkout": "^2.6.3",
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "reselect": "^4.0.0",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "yarn": "^1.22.4"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -51,5 +55,10 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3",
     "webpack-merge": "^4.2.2"
+  },
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "components/{name}",
+    "packageManager": "npm"
   }
 }

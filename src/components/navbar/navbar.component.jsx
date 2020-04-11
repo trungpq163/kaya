@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import Logo from '../../assets/logo.png';
-import LogoBag from '../../assets/shopping-bag.svg';
+
+import AtomSpinner from '@bit/bondz.react-epic-spinners.atom-spinner';
 
 import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
@@ -96,20 +97,10 @@ const Navbar = ({ currentUser, hidden }) => {
                     }
                   </li>
                   <CartIcon />
-                  {/* <a
-                    className="navbar-brand pl-4 pl-md-0 ml-0 ml-md-4"
-                    href="/"
-                    target="_blank"
-                  >
-                    <img
-                      src={LogoBag}
-                      alt=""
-                      style={{
-                        width: '1.5rem',
-                        height: '1.5rem'
-                      }}
-                    />
-                  </a> */}
+                  <AtomSpinner
+                    color='#000000'
+                    size='100'
+                  />
                 </ul>
                 {hidden ? null : <CartDropdown />}
               </div>

@@ -1,22 +1,68 @@
-import React from 'react';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import { Carousel } from 'react-responsive-carousel';
+import React, { Component } from 'react';
+import Carousel from '@bit/react-bootstrap.react-bootstrap.carousel';
 
 import './carousel.styles.scss';
 
-import imageOne from '../../assets/cat1.jpg';
-import imageTwo from '../../assets/cat2.jpg';
+class Example extends Component {
+  constructor(props, context) {
+    super(props, context);
 
-const CarouselPage =  () => (
-  <Carousel showThumbs={false} infiniteLoop={true}>
-    <div style={{ height: '25vh', color: '#fff', backgroundSize: 'cover'}}>
-      <img src={imageOne} alt="slide_one"/>
-    </div>
-    <div style={{ height: '25vh', color: '#fff', backgroundSize: 'cover'}}>
-      <img
-        src={imageTwo} alt="slide_two" />
-    </div>
-  </Carousel>
-);
+    this.handleSelect = this.handleSelect.bind(this);
 
-export default CarouselPage;
+    this.state = {
+      index: 0,
+      direction: null,
+    };
+  }
+
+  handleSelect(selectedIndex, e) {
+    this.setState({
+      index: selectedIndex,
+      direction: e.direction,
+    });
+  }
+
+  render() {
+    const { index, direction } = this.state;
+
+    return (
+      <Carousel
+        activeIndex={index}
+        direction={direction}
+        onSelect={this.handleSelect}
+      >
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="http://i.imgur.com/QPw2LBU.png"
+            alt="First slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="http://i.imgur.com/DGzDClK.png"
+            alt="Third slide"
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="http://i.imgur.com/8YI2oUe.png" 
+            alt="Third slide"
+          />
+        </Carousel.Item>
+      </Carousel>
+    );
+  }
+}
+
+const CarouselComponent = () => {
+  return (
+    <div className='container-fluid pt-5 mt-5 pb-5 mb-5'>
+      <Example/>
+    </div>
+  );
+};
+
+export default CarouselComponent;

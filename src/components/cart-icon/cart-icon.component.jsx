@@ -10,7 +10,11 @@ import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 import './cart-icon.styles.scss';
 
 const CartIcon = ({ toggleCartHidden, itemCount }) => (
-  <div className='cart-icon navbar-brand pl-4 pl-md-0 ml-0 ml-md-4' onClick={toggleCartHidden}>
+  <div className='cart-icon navbar-brand' onClick={toggleCartHidden}
+    style={{
+      marginRight: '0px'
+    }}
+  >
     <ShoppingIcon className='shopping-icon' />
     <span className='item-count'>{itemCount}</span>
   </div>
