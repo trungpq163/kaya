@@ -15,9 +15,6 @@ class SignIn extends React.Component {
       email: '',
       password: ''
     };
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit = async event => {

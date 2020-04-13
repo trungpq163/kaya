@@ -99,7 +99,6 @@ const Navbar = ({ currentUser, hidden }) => {
                   <CartIcon />
                   <AtomSpinner
                     color='#000000'
-                    size='100'
                   />
                 </ul>
                 {hidden ? null : <CartDropdown />}

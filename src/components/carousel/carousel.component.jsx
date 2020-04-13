@@ -59,7 +59,7 @@ class Example extends Component {
 
 const CarouselComponent = () => {
   return (
-    <div className='container-fluid pt-5 mt-5 pb-5 mb-5'>
+    <div className='container pt-5 mt-5 pb-5 mb-5'>
       <Example/>
     </div>
   );
