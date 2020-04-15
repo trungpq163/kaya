@@ -5,6 +5,8 @@ import { createStructuredSelector } from 'reselect';
 
 import './App.css';
 
+import MyLoader from './components/content-loader/content-loader.component';
+
 // import HomePage from './pages/homepage/homepage.component';
 const HomePage = lazy(() => import('./pages/homepage/homepage.component'));
 // import ShopPage from './pages/shop/shop.component';
@@ -53,11 +55,8 @@ class App extends React.Component {
         <Navbar/>
         <Switch>
           <Suspense fallback={
-            <div className='mt-5 pt-5'>
-              <h1 style={{
-                fontSize: '10rem',
-                fontFamily: 'sans-serif'
-              }}>LODINGGHAHGJAHGJAHGAJKGHAKJHGAJK</h1>
+            <div className='mt-5 pt-5 container'>
+              <MyLoader/>
             </div>
           }>
             <Route exact path='/' component={HomePage} />

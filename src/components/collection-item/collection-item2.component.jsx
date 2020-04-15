@@ -4,14 +4,14 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addItem } from '../../redux/cart/cart.actions';
 import './collection-item2.styles.scss';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const CollectionItem2 = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
 
   const addItemFunc = (x) => addItem(x);
 
-  const toastItem = () => toast('You added item success! :3');
+  const toastItem = () => toast('Your item added successful :3');
 
   return (
     <div className="col-md-3 col-sm-6 col-xs-6">
