@@ -7,6 +7,7 @@ import CollectionsOverview from '../../components/collection-overview/collection
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 import { createStructuredSelector } from 'reselect';
+
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
