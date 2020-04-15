@@ -2,6 +2,8 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
+import { toast } from 'react-toastify';
+
 const config = {
   apiKey: 'AIzaSyCdOejIL8VQDzcFXMrjM0lIspn98rBy4s4',
   authDomain: 'berrys-77953.firebaseapp.com',
@@ -45,6 +47,12 @@ export const firestore = firebase.firestore();
 
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
-export const signInWithGoogle = () => auth.signInWithPopup(provider);
+export const signInWithGoogle = () => auth.signInWithPopup(provider)
+  .then(() => toast('Horay, No Bug, Login Successful!'))
+  .catch((err) => toast('Login Failed', err));
+
+export const signOut = () => auth.signOut()
+  .then(() => toast('Logout Successful! I miss you, Hope you back :('))
+  .catch((err) => toast('Logout Failed :<', err));
 
 export default firebase;

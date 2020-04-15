@@ -6,7 +6,10 @@ import Logo from '../../assets/logo.png';
 
 import AtomSpinner from '@bit/bondz.react-epic-spinners.atom-spinner';
 
-import { auth } from '../../firebase/firebase.utils';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import { auth, signOut } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
@@ -18,6 +21,7 @@ import { OptionLink } from './navbar.styles';
 import './navbar.styles.css';
 
 const Navbar = ({ currentUser, hidden }) => {
+  const notify = () => toast('Sign out successful!');
   return (
     <div className="navigation-wrap bg-light start-header start-style">
       <div className="container">
@@ -86,13 +90,21 @@ const Navbar = ({ currentUser, hidden }) => {
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     {
                       currentUser ? (
-                        <OptionLink as='div' className="nav-link" onClick={() => auth.signOut()}>
+                        <OptionLink
+                          as='div'
+                          className="nav-link"
+                          onClick={signOut}
+                        >
                           Logout
                         </OptionLink>
                       ) : (
-                        <OptionLink className="nav-link" to='/signin'>
-                            Signin
+                        <OptionLink
+                          className="nav-link"
+                          to='/signin'
+                        >
+                          Signin
                         </OptionLink>
+                        
                       )
                     }
                   </li>

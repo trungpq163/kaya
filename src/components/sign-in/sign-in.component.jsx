@@ -3,7 +3,12 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 
+import { Link } from 'react-router-dom';
+
 import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import './sign-in.styles.scss';
 
@@ -22,11 +27,11 @@ class SignIn extends React.Component {
 
     const { email, password } = this.state;
 
-    try {
-      await auth.signInWithEmailAndPassword(email, password);
+    try {   
+      await auth.signInWithEmailAndPassword(email, password);      
       this.setState({ email: '', password: '' });
     } catch (error) {
-      console.log(error);
+      toast(error.message);
     }
   };
 
@@ -39,8 +44,12 @@ class SignIn extends React.Component {
   render() {
     return (
       <div className='sign-in'>
-        <h2>I already have an account</h2>
-        <span>Sign in with your email and password</span>
+        <h2 className='title'
+          style={{
+            fontSize: '1.4rem'
+          }}
+        >Already have an account!</h2>
+        <span>Sign in now!</span>
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
@@ -59,13 +68,36 @@ class SignIn extends React.Component {
             label='password'
             required
           />
-          <div className='buttons'>
-            <CustomButton type='submit'> Sign in </CustomButton>
-            <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
-              Sign in with Google
-            </CustomButton>
+          <div className='buttons'
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              justifyContent: "space-between"
+            }}
+          >
+            <CustomButton type='submit'
+            > Sign in </CustomButton>            
+            <ToastContainer />
+            <Link
+              to='/forgot'
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >
+            Forgot a password?
+            </Link>
           </div>
         </form>
+        <CustomButton
+          style={{
+            marginTop: '1rem'
+          }}
+          onClick={signInWithGoogle} isGoogleSignIn>
+          Sign in with Google
+        </CustomButton> 
       </div>
     );
   }
