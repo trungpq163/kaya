@@ -71,19 +71,19 @@ const Navbar = ({ currentUser, hidden }) => {
                     </a>
                     <div className="dropdown-menu">
                       <OptionLink to='/shop/hats' className="dropdown-item">
-                        Hats
+                        Mũ nam nữ
                       </OptionLink>
                       <OptionLink to='/shop/sneakers' className="dropdown-item">
-                        Sneakers
+                        Giày thể thao
                       </OptionLink>
                       <OptionLink to='/shop/jackets' className="dropdown-item">
-                        Jackets
+                        Áo khoác
                       </OptionLink>
                       <OptionLink to='/shop/dress' className="dropdown-item">
-                        Dress
+                        Váy nữ
                       </OptionLink>
                       <OptionLink to='/shop/mensshirt' className="dropdown-item">
-                        Mens shirt
+                        Áo nam
                       </OptionLink> 
                     </div>
                   </li>
