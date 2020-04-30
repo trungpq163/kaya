@@ -1,246 +1,246 @@
 const SHOP_DATA = {
   hats: {
     id: 1,
-    title: 'Hats',
+    title: 'Mũ Nam Nữ!',
     routeName: 'hats',
     items: [
       {
         id: 1,
-        name: 'Brown Brim',
-        imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-        price: 25
+        name: 'HOT Nón Lưỡi Trai ADD Cực HOT - Bản Giới Hạn',
+        imageUrl: 'https://cf.shopee.vn/file/775059340890b970432ffb9948a55760',
+        price: 36
       },
       {
         id: 2,
-        name: 'Blue Beanie',
-        imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-        price: 18
+        name: 'Mũ Snapback Nón Hiphop Thời Trang Hàn Quốc Nuzada N8',
+        imageUrl: 'https://cf.shopee.vn/file/baa0a0ab751426e12cc1c2ebf1c8b8c0',
+        price: 28
       },
       {
         id: 3,
-        name: 'Brown Cowboy',
-        imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-        price: 35
+        name: 'Nón kết - mũ lưỡi trai nam nữ đẹp, hợp thời trang',
+        imageUrl: 'https://cf.shopee.vn/file/b27f2d901cbb12d9875510fed2a2ad3d',
+        price: 85
       },
       {
         id: 4,
-        name: 'Grey Brim',
-        imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-        price: 25
+        name: 'Mũ lưỡi trai nhung gân Over',
+        imageUrl: 'https://cf.shopee.vn/file/406248ff86f828eaf7caac30b17122a5',
+        price: 59
       },
       {
         id: 5,
-        name: 'Green Beanie',
-        imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-        price: 18
+        name: 'Nón Kết - Mũ Lưỡi Trai BALLCAP đen trắng',
+        imageUrl: 'https://cf.shopee.vn/file/7d342615e6662fe5c17c567d4faadfc2',
+        price: 88
       },
       {
         id: 6,
-        name: 'Palm Tree Cap',
-        imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-        price: 14
+        name: 'Mũ lưỡi trai phong cách thời trang Hàn Quốc',
+        imageUrl: 'https://cf.shopee.vn/file/dfa64599e59c63bdf20926ade46e37ac',
+        price: 66
       },
       {
         id: 7,
-        name: 'Red Beanie',
-        imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-        price: 18
+        name: 'Mũ lưỡi trai cá tính',
+        imageUrl: 'https://cf.shopee.vn/file/0a38d275910d6f4ab64e330905d31c86',
+        price: 35
       },
       {
         id: 8,
-        name: 'Wolf Cap',
-        imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-        price: 14
+        name: 'Mũ lưỡi trai nhiều màu hoạ tiết chữ dành cho nam và nữ',
+        imageUrl: 'https://cf.shopee.vn/file/323f36d879b19d7b921694a00b062f9a',
+        price: 52
       },
       {
         id: 9,
-        name: 'Blue Snapback',
-        imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-        price: 16
+        name: 'Mũ lưỡi trai chống tia UV thêu chữ thời trang',
+        imageUrl: 'https://cf.shopee.vn/file/79d1e7c5910859c7cc4f3bae8f296408',
+        price: 58
       }
     ]
   },
   sneakers: {
     id: 2,
-    title: 'Sneakers',
+    title: 'Giày Thể Thao!',
     routeName: 'sneakers',
     items: [
       {
         id: 10,
-        name: 'Adidas NMD',
-        imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-        price: 220
+        name: 'Giày thể thao nam cao cấp BB99 NHẸ, SIÊU ÊM, SIÊU BỀN',
+        imageUrl: 'https://cf.shopee.vn/file/5296e15f8f8886991e86a9d62752254e',
+        price: 199
       },
       {
         id: 11,
-        name: 'Adidas Yeezy',
-        imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-        price: 280
+        name: 'Giày Nike Air Đế Hơi Giày Thể Thao VNXK',
+        imageUrl: 'https://cf.shopee.vn/file/ff3c3f06767a74aef6fac0ce462e0340',
+        price: 1050
       },
       {
         id: 12,
-        name: 'Black Converse',
-        imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-        price: 110
+        name: 'Giày thể thao MCQUEEN',
+        imageUrl: 'https://cf.shopee.vn/file/ed9af2d32a726de05786712fcbdd7184',
+        price: 562
       },
       {
         id: 13,
-        name: 'Nike White AirForce',
-        imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-        price: 160
+        name: 'Giày Nam Thể Thao Thời Trang (Trắng các loại)',
+        imageUrl: 'https://cf.shopee.vn/file/0250ae882a63c7553f482e714b741301',
+        price: 453
       },
       {
         id: 14,
-        name: 'Nike Red High Tops',
-        imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-        price: 160
+        name: 'Giày thể thao Sneaker',
+        imageUrl: 'https://cf.shopee.vn/file/604e07fec2065287786a1c4f08d1f84e',
+        price: 235
       },
       {
         id: 15,
-        name: 'Nike Brown High Tops',
-        imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
-        price: 160
+        name: 'Giày thể thao nữ ULzzang 2 dây buộc kiểu đế cao lượn sóng mẫu mới 2020 CAMSTORE',
+        imageUrl: 'https://cf.shopee.vn/file/5e79981e71e615e87a7ba32f94c8694b',
+        price: 159
       },
       {
         id: 16,
-        name: 'Air Jordan Limited',
-        imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-        price: 190
+        name: 'Giày Nữ 💥  Đế Độn Cá Tính',
+        imageUrl: 'https://cf.shopee.vn/file/11841560114005dec05012777f0cd28a',
+        price: 65
       },
       {
         id: 17,
-        name: 'Timberlands',
-        imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-        price: 200
+        name: 'Giày the thao Ulzzang Phản Quang Tag chữ 2020',
+        imageUrl: 'https://cf.shopee.vn/file/dc0a2b0759ce3539c56d3be34e9d0db1',
+        price: 139
       }
     ]
   },
   jackets: {
     id: 3,
-    title: 'Jackets',
+    title: 'Áo khoác!',
     routeName: 'jackets',
     items: [
       {
         id: 18,
-        name: 'Black Jean Shearling',
-        imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-        price: 125
-      },
-      {
-        id: 19,
-        name: 'Blue Jean Jacket',
-        imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-        price: 90
-      },
-      {
-        id: 20,
-        name: 'Grey Jean Jacket',
-        imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-        price: 90
-      },
-      {
-        id: 21,
-        name: 'Brown Shearling',
-        imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
+        name: 'Áo khoác HOODIE Banawa UNISEX',
+        imageUrl: 'https://cf.shopee.vn/file/c37545a9c264b1b71248f42a5b63784d',
         price: 165
       },
       {
+        id: 19,
+        name: 'Hoodie Ulzzang Nam nữ Có bigsize 95kg',
+        imageUrl: 'https://cf.shopee.vn/file/de0fa500ae1e0c5c3b1ed9fc9d825df3',
+        price: 139
+      },
+      {
+        id: 20,
+        name: 'Áo Khoác OHOH 2 Màu TAY PHỒNG Unisex (Form lửng - Đầu khóa màu ĐEN)',
+        imageUrl: 'https://cf.shopee.vn/file/f78e22b3bfb5233dafecc292b3b122c4',
+        price: 149
+      },
+      {
+        id: 21,
+        name: 'áo khoác dù jacket dragon',
+        imageUrl: 'https://cf.shopee.vn/file/9f2396ec7ab9bb6582fcbf8ef3217910',
+        price: 178
+      },
+      {
         id: 22,
-        name: 'Tan Trench',
-        imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-        price: 185
+        name: 'CO SAN- Áo Khoác Nỉ Unisex Nam Nữ Hàn Quốc CEC',
+        imageUrl: 'https://cf.shopee.vn/file/2940e5c032a1d47c2b860f571fb9116b',
+        price: 256
       }
     ]
   },
-  womens: {
+  dress: {
     id: 4,
-    title: 'Womens',
-    routeName: 'womens',
+    title: 'Váy Nữ!',
+    routeName: 'dress',
     items: [
       {
         id: 23,
-        name: 'Blue Tanktop',
-        imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-        price: 25
+        name: 'Váy lolita <Kim Ngư Anh Đào>',
+        imageUrl: 'https://cf.shopee.vn/file/c154d53737ed45c7195f1f194d2f4925',
+        price: 559
       },
       {
         id: 24,
-        name: 'Floral Blouse',
-        imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-        price: 20
+        name: 'Váy thủy thủ lolita đồng phục học sinh Nhật Bản',
+        imageUrl: 'https://cf.shopee.vn/file/d9d0b3b2cd5ca1b4ae8b6ac977e17484',
+        price: 490
       },
       {
         id: 25,
-        name: 'Floral Dress',
-        imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-        price: 80
+        name: 'Áo váy',
+        imageUrl: 'https://cf.shopee.vn/file/386a66e0e8fd743fee04fee17dc52201',
+        price: 350
       },
       {
         id: 26,
-        name: 'Red Dots Dress',
-        imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-        price: 80
+        name: 'Váy suông thêu trăng sao tay loe tiểu thư',
+        imageUrl: 'https://cf.shopee.vn/file/bc86c5ab3ae59a55cd87e55068ab7657',
+        price: 225
       },
       {
         id: 27,
-        name: 'Striped Sweater',
-        imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-        price: 45
+        name: 'Váy Lolita họa tiết Nhật bản',
+        imageUrl: 'https://cf.shopee.vn/file/bbdabe0eb82c945a1ccbd03ae5769aa0',
+        price: 1300
       },
       {
         id: 28,
-        name: 'Yellow Track Suit',
-        imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-        price: 135
+        name: 'Váy ulzzang',
+        imageUrl: 'https://cf.shopee.vn/file/3709268d2515a8a453ffb772272d5d7e',
+        price: 320
       },
       {
         id: 29,
-        name: 'White Blouse',
-        imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-        price: 20
+        name: 'Váy nơ',
+        imageUrl: 'https://cf.shopee.vn/file/183211fa3eb55253666e45b3b536b16d',
+        price: 250
       }
     ]
   },
-  mens: {
+  mensshirt: {
     id: 5,
-    title: 'Mens',
-    routeName: 'mens',
+    title: 'Áo Nam',
+    routeName: 'mensshirt',
     items: [
       {
         id: 30,
-        name: 'Camo Down Vest',
-        imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-        price: 325
+        name: 'Áo Thun Nam Nữ UNISEX Tay Lỡ Form Rộng 4.8',
+        imageUrl: 'https://cf.shopee.vn/file/70324ac65adca86ea1740ff2249d6569',
+        price: 70
       },
       {
         id: 31,
-        name: 'Floral T-shirt',
-        imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-        price: 20
+        name: 'Áo Haori Sói Sakura Siêu Chất , hàng cao cấp, mã SK12',
+        imageUrl: 'https://cf.shopee.vn/file/44889ec7a84e1780b37c43cf982059a9',
+        price: 210
       },
       {
         id: 32,
-        name: 'Black & White Longsleeve',
-        imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-        price: 25
+        name: 'Áo phông nam in good morning form rộng TN23 sợi rễ tre tổng hợp',
+        imageUrl: 'https://cf.shopee.vn/file/88c678f6b4273b1c40e92add99f1e888',
+        price: 57
       },
       {
         id: 33,
-        name: 'Pink T-shirt',
-        imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-        price: 25
+        name: 'Áo thun HONEST YOU TRẮNG Nam UNISEX',
+        imageUrl: 'https://cf.shopee.vn/file/d986e014e675b538113a75d671816c33',
+        price: 99
       },
       {
         id: 34,
-        name: 'Jean Long Sleeve',
-        imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-        price: 40
+        name: 'Áo Shanghai Form Unisex',
+        imageUrl: 'https://cf.shopee.vn/file/425e9f5557f50d996c7999fd1cf751a4',
+        price: 135
       },
       {
         id: 35,
-        name: 'Burgundy T-shirt',
-        imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-        price: 25
+        name: 'Áo Thun PACIF Đen TWOCE PACIFICISM Nam Nữ Unisex',
+        imageUrl: 'https://cf.shopee.vn/file/d7227698831572458920aaf6dc5b4c48',
+        price: 99
       }
     ]
   }

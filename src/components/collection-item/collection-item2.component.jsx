@@ -65,4 +65,3 @@ export default connect(
   null,
   mapDispatchToProps
 )(CollectionItem2);
-

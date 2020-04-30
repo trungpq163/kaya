@@ -79,11 +79,11 @@ const Navbar = ({ currentUser, hidden }) => {
                       <OptionLink to='/shop/jackets' className="dropdown-item">
                         Jackets
                       </OptionLink>
-                      <OptionLink to='/shop/womens' className="dropdown-item">
-                        Womens
+                      <OptionLink to='/shop/dress' className="dropdown-item">
+                        Dress
                       </OptionLink>
-                      <OptionLink to='/shop/mens' className="dropdown-item">
-                        Mens
+                      <OptionLink to='/shop/mensshirt' className="dropdown-item">
+                        Mens shirt
                       </OptionLink> 
                     </div>
                   </li>
