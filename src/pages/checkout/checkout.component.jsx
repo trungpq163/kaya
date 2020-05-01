@@ -16,19 +16,19 @@ const CheckoutPage = ({ cartItems, total }) => (
   <div className="checkout-page mt-5 pt-5">
     <div className="checkout-header">
       <div className="header-block">
-        <span>Product</span>
+        <span>Sản phẩm</span>
       </div>
       <div className="header-block">
-        <span>Description</span>
+        <span>Chi tiết</span>
       </div>
       <div className="header-block">
-        <span>Quantity</span>
+        <span>Số lượng</span>
       </div>
       <div className="header-block">
-        <span>Price</span>
+        <span>Tổng số tiền</span>
       </div>
       <div className="header-block">
-        <span>Remove</span>
+        <span>Xoá</span>
       </div>
     </div>
     {
@@ -36,12 +36,12 @@ const CheckoutPage = ({ cartItems, total }) => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem}/>
       ))
     }
-    <div className="test-warning">
-      *Please use the following test credit card payments
+    <div className="test-warning mt-5">
+      *Thẻ tín dụng dùng để test!
       <br />
        4242 4242 4242 4242 - Exp: 01/20 - CVV: 123
     </div>
-    <div className="total">TOTAL: ${total}</div>
+    <div className="total">Tổng: ${total}</div>
     <StripeCheckoutButton price={total} />
   </div>
 );

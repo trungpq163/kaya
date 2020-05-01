@@ -1,20 +1,20 @@
 import React from 'react';
-
-import CollectionItem from '../collection-item/collection-item.component';
-import CollectionItem2 from '../collection-item/collection-item2.component';
+import { Link } from 'react-router-dom';
+import CollectionItem from '../collection-item/collection-item2.component';
 
 import './collection-preview.styles.scss';
 
-const CollectionPreview = ({ title, items }) => (
+const CollectionPreview = ({ title, items, routeName }) => (
   <div className="collection-preview">
-    <h1 className="title"
+    <Link className="title"
+      to={`/shop/${routeName}`}
       style={{
         textAlign: 'start',
         paddingLeft: '15px',
         fontWeight: '500',
         fontSize: '1.5em'
       }}
-    >{title}</h1>
+    >{title}</Link>
     {/* <div className="preview">
       {
         items
@@ -33,7 +33,7 @@ const CollectionPreview = ({ title, items }) => (
                 items
                   .filter((item, idx) => idx < 8)
                   .map(item => (
-                    <CollectionItem2 key={item.id} item={item} />
+                    <CollectionItem key={item.id} item={item} />
                   ))
               }
             </div>
@@ -46,7 +46,7 @@ const CollectionPreview = ({ title, items }) => (
                 items
                   .filter((item, idx) => idx < 4)
                   .map(item => (
-                    <CollectionItem2 key={item.id} item={item} />
+                    <CollectionItem key={item.id} item={item} />
                   ))
               }
             </div>

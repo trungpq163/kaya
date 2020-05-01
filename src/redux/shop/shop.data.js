@@ -1,7 +1,7 @@
 const SHOP_DATA = {
   hats: {
     id: 1,
-    title: 'Mũ Nam Nữ!',
+    title: 'Mũ nam nữ!',
     routeName: 'hats',
     items: [
       {
@@ -62,7 +62,7 @@ const SHOP_DATA = {
   },
   sneakers: {
     id: 2,
-    title: 'Giày Thể Thao!',
+    title: 'Giày thể thao!',
     routeName: 'sneakers',
     items: [
       {
@@ -154,7 +154,7 @@ const SHOP_DATA = {
   },
   dress: {
     id: 4,
-    title: 'Váy Nữ!',
+    title: 'Váy nữ!',
     routeName: 'dress',
     items: [
       {
@@ -203,7 +203,7 @@ const SHOP_DATA = {
   },
   mensshirt: {
     id: 5,
-    title: 'Áo Nam',
+    title: 'Áo nam!',
     routeName: 'mensshirt',
     items: [
       {
@@ -241,6 +241,49 @@ const SHOP_DATA = {
         name: 'Áo Thun PACIF Đen TWOCE PACIFICISM Nam Nữ Unisex',
         imageUrl: 'https://cf.shopee.vn/file/d7227698831572458920aaf6dc5b4c48',
         price: 99
+      }
+    ]
+  },
+  jean: {
+    id: 6,
+    title: 'Quần jean!',
+    routeName: 'jean',
+    items: [
+      {
+        id: 40,
+        name: 'QUẦN JEAN ỐNG RỘNG NỮ CAO CẤP NITIQC DÀI RỘNG LƯNG SIÊU CAO CỰC HOT',
+        imageUrl: 'https://cf.shopee.vn/file/a5d183ac27032735b7e916aecf4731ce',
+        price: 135
+      },
+      {
+        id: 41,
+        name: 'Quần JEAN Nam Rách ⭐️ XÃ KHO CHỈ 1 ngày 🌟 UNISEX cao cấp SIÊU ĐẸP',
+        imageUrl: 'https://cf.shopee.vn/file/8b30ac4c312bd90fa93bd915c1207821',
+        price: 145
+      },
+      {
+        id: 42,
+        name: 'Quần JEAN DÀI 01 Nam Nữ Unisex',
+        imageUrl: 'https://cf.shopee.vn/file/ab0ad16a250b49c20fe6317354408062',
+        price: 149
+      },
+      {
+        id: 43,
+        name: 'QJ022 - QUẦN JEAN PAGGY ỐNG RỘNG NỮ ĐEN',
+        imageUrl: 'https://cf.shopee.vn/file/3c7dfdbbb08bac5e0e68bec572429e67',
+        price: 169
+      },
+      {
+        id: 44,
+        name: 'Quần Jeans Ống Rộng SIMPLE JEANS Xanh Nhạt Unisex',
+        imageUrl: 'https://cf.shopee.vn/file/58f003c2a3c46aae8d6f61e507b49911',
+        price: 155
+      },
+      {
+        id: 45,
+        name: 'Quần jean Nam Hàn quốc Quần Baggy 001 ⚫️ UNISEX Cao Cấp',
+        imageUrl: 'https://cf.shopee.vn/file/a84971c36d9c437a6b8c35bbc51c270d',
+        price: 148
       }
     ]
   }
