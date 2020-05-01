@@ -25,7 +25,7 @@ const CheckoutPage = ({ cartItems, total }) => (
         <span>Số lượng</span>
       </div>
       <div className="header-block">
-        <span>Tổng số tiền</span>
+        <span>Giá</span>
       </div>
       <div className="header-block">
         <span>Xoá</span>
@@ -39,7 +39,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     <div className="test-warning mt-5">
       *Thẻ tín dụng dùng để test!
       <br />
-       4242 4242 4242 4242 - Exp: 01/20 - CVV: 123
+       4242 4242 4242 4242 - Exp: 05/20 - CVV: 123
     </div>
     <div className="total">Tổng: ${total}</div>
     <StripeCheckoutButton price={total} />

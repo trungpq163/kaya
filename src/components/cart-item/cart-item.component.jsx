@@ -7,7 +7,7 @@ const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
     <img src={imageUrl} alt="item" />
     <div className="item-details">
       <span className="name"> {
-        name.length < 25 ? name : name.split(' ', 5).join(' ') + '....'
+        name.length < 25 ? name : name.split(' ', 3).join(' ') + '....'
       }</span>
       <span className="price">
         {quantity} x ${price}

@@ -86,7 +86,10 @@ const Navbar = ({ currentUser, hidden }) => {
                         Áo nam
                       </OptionLink> 
                       <OptionLink to='/shop/jean' className="dropdown-item">
-                        Quần Jean
+                        Quần jean
+                      </OptionLink> 
+                      <OptionLink to='/shop/balo' className="dropdown-item">
+                        Balo nam nữ
                       </OptionLink> 
                     </div>
                   </li>

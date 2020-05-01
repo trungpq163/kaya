@@ -286,6 +286,61 @@ const SHOP_DATA = {
         price: 148
       }
     ]
+  },
+  balo: {
+    id: 7,
+    title: 'Balo Nam Nữ!',
+    routeName: 'balo',
+    items: [
+      {
+        id: 50,
+        name: 'Balo Thời Trang có nắp cá tính (ảnh thật)',
+        imageUrl: 'https://cf.shopee.vn/file/ce48c19d1cb0f72b12c587b9af266242',
+        price: 69
+      },
+      {
+        id: 51,
+        name: '[ HOT ] Balo cỡ lớn nam nữ 5 NGĂN laptop 16inch B283',
+        imageUrl: 'https://cf.shopee.vn/file/fbaee8d66d0384f190f73ff6f840c2fd',
+        price: 150
+      },
+      {
+        id: 52,
+        name: '⚡️[XẢ HÀNG] Balo đi học đi chơi hoạ tiết Tokyo bắt mắt (có lưới cạnh 2 bên)',
+        imageUrl: 'https://cf.shopee.vn/file/351980c6584bb659d1000032ecdd76ce',
+        price: 134
+      },
+      {
+        id: 53,
+        name: 'Balo Nam 💖FREESHIP💖 Balo Thời Trang Nam Nữ Ulzzang vải Oxford Đựng Vừa LAPTOP 15.6 inch [BL-28]',
+        imageUrl: 'https://cf.shopee.vn/file/57a0c89430f8387f71a9fdd22299834e',
+        price: 185
+      },
+      {
+        id: 54,
+        name: 'balo Phản Quang 💖 Free Ship 💖 balo thời trang xu hướng 2020',
+        imageUrl: 'https://cf.shopee.vn/file/f53f8a9f5222164f45c1cbbff8a2f250',
+        price: 227
+      },
+      {
+        id: 55,
+        name: 'Shopee (450k) Balo Kimetsu No yaiba tanjiro cặp sách đi học truyện tranh Thanh gươm diệt quỷ đựng vừa khổ A4',
+        imageUrl: 'https://cf.shopee.vn/file/cfc7f1c964a2c99b2ced5b1c44f9489d',
+        price: 450
+      },
+      {
+        id: 56,
+        name: 'balo đi học, du lịch vải bố ulzzang chất, balo bố , style chất [nhập FSS11NOV hoàn 20% xu]',
+        imageUrl: 'https://cf.shopee.vn/file/eb526e9cbad5c18f76cb2e12ea6cc85f',
+        price: 189
+      },
+      {
+        id: 57,
+        name: '[ORDER] BALO ULZZANG YILETAO UNISEX',
+        imageUrl: 'https://cf.shopee.vn/file/4ea645ca90d4135f2c304de2259076bd',
+        price: 225
+      }
+    ]
   }
 };
 

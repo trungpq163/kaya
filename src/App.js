@@ -18,6 +18,8 @@ const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
 
 import Navbar from './components/navbar/navbar.component';
 
+const Footer = lazy(() => import('./components/footer/footer.component'));
+
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 import { setCurrentUser } from './redux/user/user.action';
@@ -73,6 +75,7 @@ class App extends React.Component {
                   )
               }
             />
+            <Footer />
           </Suspense>
         </Switch>
       </div>
