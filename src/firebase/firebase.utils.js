@@ -52,7 +52,7 @@ export const signInWithGoogle = () => auth.signInWithPopup(provider)
   .catch((err) => toast('Login Failed', err));
 
 export const signOut = () => auth.signOut()
-  .then(() => toast('Logout Successful! I miss you, Hope you back :('))
+  .then(() => toast('Logout Successful!'))
   .catch((err) => toast('Logout Failed :<', err));
 
 export default firebase;
