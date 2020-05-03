@@ -4,7 +4,7 @@ import './footer.styles.scss';
 
 const Footer = () => {
   return (
-    <footer className="container footer py-5">
+    <footer className="footer py-5">
       <div className="row">
         <div className="col-12 col-md">
           <small className="d-block mb-3 text-muted">©2020 Kaya (Team Do An Co So)</small>

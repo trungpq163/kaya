@@ -6,7 +6,9 @@ import { addItem } from '../../redux/cart/cart.actions';
 import './collection-item2.styles.scss';
 import { toast } from 'react-toastify';
 
-const CollectionItem2 = ({ item, addItem }) => {
+import slugify from 'slugify';
+
+const CollectionItem2 = ({ item, addItem, route }) => {
   const { name, price, imageUrl } = item;
 
   const addItemFunc = (x) => addItem(x);
@@ -17,7 +19,9 @@ const CollectionItem2 = ({ item, addItem }) => {
     <div className="col-md-3 col-sm-6 col-xs-6">
       <div className="product-grid">
         <div className="product-image">
-          <a href="#">
+          <Link
+            to={`${route}/${slugify(name)}`}
+          >
             <img
               className="pic-1"
               src={imageUrl}
@@ -28,13 +32,15 @@ const CollectionItem2 = ({ item, addItem }) => {
               src={imageUrl}
               alt="img"
             />
-          </a>
+          </Link>
           <span className="product-new-label">Sale</span>
           <span className="product-discount-label">20%</span>
         </div>
         <div className="product-content">
           <h3 className="title">
-            <a href="#">{name}</a>
+            <Link
+              to={`${route}/${slugify(name)}`}
+            >{name}</Link>
           </h3>
           <div className="price">
             ${price}

@@ -8,8 +8,10 @@ import { LinkCustom } from './collection.styles';
 
 import './collection.styles.scss';
 
-const CollectionPage = ({ collection }) => {
+const CollectionPage = ({ collection, history }) => {
   const { title, items } = collection;
+  const { location } = history;
+
   return (
     <div className="collection-page">
       <div className="titleGenre"
@@ -51,7 +53,7 @@ const CollectionPage = ({ collection }) => {
             {
               items
                 .map(item => (
-                  <CollectionItem2 key={item.id} item={item} />
+                  <CollectionItem2 key={item.id} item={item} route={location.pathname}/>
                 ))
             }
           </div>

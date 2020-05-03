@@ -33,7 +33,7 @@ const CollectionPreview = ({ title, items, routeName }) => (
                 items
                   .filter((item, idx) => idx < 8)
                   .map(item => (
-                    <CollectionItem key={item.id} item={item} />
+                    <CollectionItem key={item.id} item={item} route={`/shop/${routeName}`}/>
                   ))
               }
             </div>
@@ -46,7 +46,7 @@ const CollectionPreview = ({ title, items, routeName }) => (
                 items
                   .filter((item, idx) => idx < 4)
                   .map(item => (
-                    <CollectionItem key={item.id} item={item} />
+                    <CollectionItem key={item.id} item={item} route={`/shop/${routeName}`}/>
                   ))
               }
             </div>

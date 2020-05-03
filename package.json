@@ -33,6 +33,7 @@
     "redux-persist": "^6.0.0",
     "reselect": "^4.0.0",
     "shortid": "^2.2.15",
+    "slugify": "^1.4.0",
     "styled-components": "^5.1.0",
     "yarn": "^1.22.4"
   },
