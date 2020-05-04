@@ -4,16 +4,18 @@ import { Link } from 'react-router-dom';
 
 import CollectionItem2 from '../../components/collection-item/collection-item2.component';
 import { selectCollection } from '../../redux/shop/shop.selector';
-import { LinkCustom } from './collection.styles';
+import { LinkCustom } from './item.styles';
 
-import './collection.styles.scss';
+import slugify from 'slugify';
 
-const CollectionPage = ({ collection, history }) => {
-  const { title, items } = collection;
+import './item.styles';
+
+const ItemPage = ({ collection, history }) => {
+  const { title, items, routeName } = collection;
   const { location } = history;
 
   return (
-    <div className="collection-page">
+    <div className="item-page">
       <div className="titleGenre"
         style={{
           display: 'flex',
@@ -28,7 +30,7 @@ const CollectionPage = ({ collection, history }) => {
             }}
           >Home >&nbsp;</h2>
         </LinkCustom>
-      
+
         <LinkCustom to='/shop/'>
           <h2 className="title"
             style={{
@@ -43,17 +45,33 @@ const CollectionPage = ({ collection, history }) => {
               fontSize: '1.3em',
               marginBottom: '15px'
             }}
-          >{title}</h2>
+          >{title} >&nbsp;</h2>
+        </LinkCustom>
+        <LinkCustom to='/shop/'>
+          <h2 className="title"
+            style={{
+              fontSize: '1.3em',
+              marginBottom: '15px'
+            }}
+          >
+            {
+              items
+                .filter(item => window.location.pathname === `/shop/${routeName}/${slugify(item.name)}`)
+                .map(item => (
+                  item.name
+                ))
+            }
+          </h2>
         </LinkCustom>
       </div>
       <div className="items">
-        
         {
           <div className="row">
             {
               items
+                .filter(item => window.location.pathname === `/shop/${routeName}/${slugify(item.name)}`)
                 .map(item => (
-                  <CollectionItem2 key={item.id} item={item} route={location.pathname}/>
+                  <CollectionItem2 key={item.id} item={item} route={location.pathname} />
                 ))
             }
           </div>
@@ -63,8 +81,15 @@ const CollectionPage = ({ collection, history }) => {
   );
 };
 
+
+/* {
+  window.location.pathname === `/shop/${routeName}/${slugify(item.name)}`
+} */
+
+// .filter(item => slugify(item.name) === 'Mu-Snapback-Non-Hiphop-Thoi-Trang-Han-Quoc-Nuzada-N8')
+
 const mapStateToProps = (state, ownProps) => ({
   collection: selectCollection(ownProps.match.params.collectionId)(state)
 });
 
-export default connect(mapStateToProps)(CollectionPage);
+export default connect(mapStateToProps)(ItemPage);
