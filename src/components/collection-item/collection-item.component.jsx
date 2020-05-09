@@ -6,6 +6,8 @@ import { addItem } from '../../redux/cart/cart.actions';
 
 import './collection-item.styles.scss';
 
+import PropTypes from 'prop-types';
+
 const CollectionItem = ({ item, addItem }) => {
   const { name, price, imageUrl } = item;
 
@@ -30,6 +32,11 @@ const CollectionItem = ({ item, addItem }) => {
       </CustomButton>
     </div>
   );
+};
+
+CollectionItem.propTypes = {
+  item: PropTypes.object.isRequired,
+  addItem: PropTypes.func.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({

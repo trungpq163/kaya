@@ -6,10 +6,10 @@ import Logo from '../../assets/logo.png';
 
 import AtomSpinner from '@bit/bondz.react-epic-spinners.atom-spinner';
 
-import { ToastContainer, toast } from 'react-toastify';
+// import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { auth, signOut } from '../../firebase/firebase.utils';
+import { signOut } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
@@ -18,10 +18,12 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 
 import { OptionLink } from './navbar.styles';
 
+import PropTypes from 'prop-types';
+
 import './navbar.styles.css';
 
 const Navbar = ({ currentUser, hidden }) => {
-  const notify = () => toast('Sign out successful!');
+  // const notify = () => toast('Sign out successful!');
   return (
     <div className="navigation-wrap bg-light start-header start-style">
       <div className="container">
@@ -84,13 +86,13 @@ const Navbar = ({ currentUser, hidden }) => {
                       </OptionLink>
                       <OptionLink to='/shop/mensshirt' className="dropdown-item">
                         Áo nam
-                      </OptionLink> 
+                      </OptionLink>
                       <OptionLink to='/shop/jean' className="dropdown-item">
                         Quần jean
-                      </OptionLink> 
+                      </OptionLink>
                       <OptionLink to='/shop/balo' className="dropdown-item">
                         Balo nam nữ
-                      </OptionLink> 
+                      </OptionLink>
                     </div>
                   </li>
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -104,14 +106,14 @@ const Navbar = ({ currentUser, hidden }) => {
                           Logout
                         </OptionLink>
                       ) : (
-                        <OptionLink
-                          className="nav-link"
-                          to='/signin'
-                        >
-                          Signin
-                        </OptionLink>
-                        
-                      )
+                          <OptionLink
+                            className="nav-link"
+                            to='/signin'
+                          >
+                            Signin
+                          </OptionLink>
+
+                        )
                     }
                   </li>
                   <CartIcon />
@@ -127,6 +129,11 @@ const Navbar = ({ currentUser, hidden }) => {
       </div>
     </div>
   );
+};
+
+Navbar.propTypes = {
+  currentUser: PropTypes.object,
+  hidden: PropTypes.bool.isRequired
 };
 
 const mapStateToProps = createStructuredSelector({

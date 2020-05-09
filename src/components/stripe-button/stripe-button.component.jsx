@@ -1,6 +1,8 @@
 import React from 'react';
 import StripeCheckout from 'react-stripe-checkout';
 
+import PropTypes from 'prop-types';
+
 import Logo from '../../assets/logo.png';
 
 const StripeCheckoutButton = ({ price }) => {
@@ -26,6 +28,10 @@ const StripeCheckoutButton = ({ price }) => {
       stripeKey={publisableKey}
     />
   );
+};
+
+StripeCheckoutButton.propTypes = {
+  price: PropTypes.number.isRequired
 };
 
 export default StripeCheckoutButton;

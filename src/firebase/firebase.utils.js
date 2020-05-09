@@ -5,14 +5,14 @@ import 'firebase/auth';
 import { toast } from 'react-toastify';
 
 const config = {
-  apiKey: 'AIzaSyCdOejIL8VQDzcFXMrjM0lIspn98rBy4s4',
-  authDomain: 'berrys-77953.firebaseapp.com',
-  databaseURL: 'https://berrys-77953.firebaseio.com',
-  projectId: 'berrys-77953',
-  storageBucket: 'berrys-77953.appspot.com',
-  messagingSenderId: '76617372378',
-  appId: '1:76617372378:web:96b899d896f392a2d04be3',
-  measurementId: 'G-2VGF9E1TT9'
+  apiKey: 'AIzaSyDUEDN70LSlzXx_-itS4FlhAj2_qsKqth0',
+  authDomain: 'doancoso-kaya.firebaseapp.com',
+  databaseURL: 'https://doancoso-kaya.firebaseio.com',
+  projectId: 'doancoso-kaya',
+  storageBucket: 'doancoso-kaya.appspot.com',
+  messagingSenderId: '1019649062912',
+  appId: '1:1019649062912:web:274a08c22fa580941080e5',
+  measurementId: 'G-FQRPVJXFTG'
 };
 
 firebase.initializeApp(config);

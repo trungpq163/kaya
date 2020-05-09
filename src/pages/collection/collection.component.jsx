@@ -6,6 +6,8 @@ import CollectionItem2 from '../../components/collection-item/collection-item2.c
 import { selectCollection } from '../../redux/shop/shop.selector';
 import { LinkCustom } from './collection.styles';
 
+import PropTypes from 'prop-types';
+
 import './collection.styles.scss';
 
 const CollectionPage = ({ collection, history }) => {
@@ -28,7 +30,7 @@ const CollectionPage = ({ collection, history }) => {
             }}
           >Home >&nbsp;</h2>
         </LinkCustom>
-      
+
         <LinkCustom to='/shop/'>
           <h2 className="title"
             style={{
@@ -47,13 +49,13 @@ const CollectionPage = ({ collection, history }) => {
         </LinkCustom>
       </div>
       <div className="items">
-        
+
         {
           <div className="row">
             {
               items
                 .map(item => (
-                  <CollectionItem2 key={item.id} item={item} route={location.pathname}/>
+                  <CollectionItem2 key={item.id} item={item} route={location.pathname} />
                 ))
             }
           </div>
@@ -62,6 +64,11 @@ const CollectionPage = ({ collection, history }) => {
     </div>
   );
 };
+
+CollectionPage.propTypes = {
+  collection: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
+}
 
 const mapStateToProps = (state, ownProps) => ({
   collection: selectCollection(ownProps.match.params.collectionId)(state)

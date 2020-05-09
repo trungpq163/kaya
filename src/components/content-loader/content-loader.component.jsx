@@ -1,7 +1,7 @@
 import React from 'react';
 import ContentLoader from 'react-content-loader';
 
-const MyLoader = props => {
+const MyLoader = () => {
   return (
     <ContentLoader
       speed={3}

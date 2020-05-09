@@ -5,6 +5,8 @@ import { createStructuredSelector } from 'reselect';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
 
+import PropTypes from 'prop-types';
+
 import {
   selectCartItems,
   selectCartTotal
@@ -33,7 +35,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     </div>
     {
       cartItems.map(cartItem => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem}/>
+        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))
     }
     <div className="test-warning mt-5">
@@ -45,6 +47,11 @@ const CheckoutPage = ({ cartItems, total }) => (
     <StripeCheckoutButton price={total} />
   </div>
 );
+
+CheckoutPage.propTypes = {
+  cartItems: PropTypes.array.isRequired,
+  total: PropTypes.number.isRequired
+}
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,

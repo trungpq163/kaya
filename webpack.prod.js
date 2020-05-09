@@ -1,5 +1,5 @@
 const merge = require('webpack-merge');
-const common = require('./webpack.common.js');
+const common = require('./webpack.common');
 const {
   CleanWebpackPlugin
 } = require('clean-webpack-plugin');
@@ -27,7 +27,7 @@ module.exports = merge(common, {
       filename: 'css/index.css'
     }),
     new HtmlWebpackPlugin({
-      title: 'Berrys',
+      title: 'Kaya',
       inject: false,
       template: './src/assets/index.html'
     })

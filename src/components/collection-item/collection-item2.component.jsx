@@ -3,8 +3,12 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { addItem } from '../../redux/cart/cart.actions';
+
 import './collection-item2.styles.scss';
+
 import { toast } from 'react-toastify';
+
+import PropTypes from 'prop-types';
 
 import slugify from 'slugify';
 
@@ -61,6 +65,12 @@ const CollectionItem2 = ({ item, addItem, route }) => {
       </div>
     </div>
   );
+};
+
+CollectionItem2.propTypes = {
+  item: PropTypes.object.isRequired,
+  addItem: PropTypes.func.isRequired,
+  route: PropTypes.string.isRequired
 };
 
 const mapDispatchToProps = dispatch => ({

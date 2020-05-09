@@ -27,7 +27,7 @@ module.exports = merge(common, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'Berrys',
+      title: 'Kaya',
       inject: false,
       template: './src/assets/index.html'
     })

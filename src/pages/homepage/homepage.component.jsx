@@ -9,7 +9,10 @@ import { selectCurrentUser } from '../../redux/user/user.selectors';
 import { createStructuredSelector } from 'reselect';
 
 import { ToastContainer, toast } from 'react-toastify';
+
 import 'react-toastify/dist/ReactToastify.css';
+
+import PropTypes from 'prop-types';
 
 import { HomePageContainer } from './homepage.styles';
 
@@ -23,10 +26,14 @@ const HomePage = ({ currentUser }) => {
         currentUser !== null ? <ToastContainer /> : null
       }
       <Carousel />
-      <CollectionsOverview />     
+      <CollectionsOverview />
     </HomePageContainer>
   );
 };
+
+HomePage.propTypes = {
+  currentUser: PropTypes.object.isRequired
+}
 
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser

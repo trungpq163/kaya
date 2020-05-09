@@ -7,6 +7,8 @@ import { selectCartItemsCount } from '../../redux/cart/cart.selectors';
 
 import { ReactComponent as ShoppingIcon } from '../../assets/shopping-bag.svg';
 
+import PropTypes from 'prop-types';
+
 import './cart-icon.styles.scss';
 
 const CartIcon = ({ toggleCartHidden, itemCount }) => (
@@ -19,6 +21,11 @@ const CartIcon = ({ toggleCartHidden, itemCount }) => (
     <span className='item-count'>{itemCount}</span>
   </div>
 );
+
+CartIcon.propTypes = {
+  toggleCartHidden: PropTypes.func.isRequired,
+  itemCount: PropTypes.number.isRequired
+};
 
 const mapDispatchToProps = dispatch => ({
   toggleCartHidden: () => dispatch(toggleCartHidden())

@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import CollectionItem2 from '../../components/collection-item/collection-item2.component';
 import { selectCollection } from '../../redux/shop/shop.selector';
 import { LinkCustom } from './item.styles';
 
 import slugify from 'slugify';
+
+import PropTypes from 'prop-types';
 
 import './item.styles';
 
@@ -81,6 +82,10 @@ const ItemPage = ({ collection, history }) => {
   );
 };
 
+ItemPage.propTypes = {
+  collection: PropTypes.object.isRequired,
+  history: PropTypes.object.isRequired
+}
 
 /* {
   window.location.pathname === `/shop/${routeName}/${slugify(item.name)}`

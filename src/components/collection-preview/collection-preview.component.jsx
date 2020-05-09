@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import CollectionItem from '../collection-item/collection-item2.component';
 
+import PropTypes from 'prop-types';
+
 import './collection-preview.styles.scss';
 
 const CollectionPreview = ({ title, items, routeName }) => (
@@ -15,15 +17,6 @@ const CollectionPreview = ({ title, items, routeName }) => (
         fontSize: '1.5em'
       }}
     >{title}</Link>
-    {/* <div className="preview">
-      {
-        items
-          .filter((item, idx) => idx < 4)
-          .map(item => (
-            <CollectionItem key={item.id} item={item} />
-          ))
-      }
-    </div> */}
     {
       window.location.pathname === '/shop' ? 
         (<div className="preview">
@@ -57,20 +50,10 @@ const CollectionPreview = ({ title, items, routeName }) => (
   </div>
 );
 
+CollectionPreview.propTypes = {
+  title: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired,
+  routeName: PropTypes.string.isRequired
+};
+
 export default CollectionPreview;
-{/* <div className="preview">
-      <div className="container">
-        <div className="row">
-          {
-            items
-              .filter((item, idx) => idx < 8)
-              .map(item => (
-                <CollectionItem2 key={item.id} item={item} />
-              ))
-          }
-        </div>
-      </div>
-      {/* <CollectionItem2/> 
-      </div >*/}
-    
-{/* <CollectionItem key={item.id} item={item} /> */ }

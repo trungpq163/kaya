@@ -7,7 +7,7 @@
   "scripts": {
     "watch": "webpack --watch",
     "start": "webpack-dev-server --open --config webpack.dev.js",
-    "build": "webpack --config webpack.prod.js"
+    "build": "GENERATE_SOURCEMAP=false webpack --config webpack.prod.js"
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",

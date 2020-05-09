@@ -11,7 +11,7 @@ const ItemDetail = () => {
         </div>
         <div className="col-md-6 col-lg-5">
           <div>
-            <h4 className='text'>
+            <h4 className='text item-title'>
               Lightweight Jacket
             </h4>
             <span>
