@@ -59,6 +59,10 @@ class SignUp extends React.Component {
     });
   }
 
+  componentWillUnmount() {
+
+  }
+
   render() {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
@@ -70,7 +74,7 @@ class SignUp extends React.Component {
         >Not have a account!</h2>
         <span>Sign up now!</span>
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
-          <FormInput 
+          <FormInput
             type='text'
             name='displayName'
             value={displayName}
@@ -103,10 +107,10 @@ class SignUp extends React.Component {
             required
           />
           <CustomButton type='submit'>Sign up</CustomButton>
-        </form> 
+        </form>
       </div>
     );
-  }  
+  }
 }
 
 export default SignUp;

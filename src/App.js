@@ -55,16 +55,16 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Navbar/>
+        <Navbar />
         <Switch>
           <Suspense fallback={
             <div className='mt-5 pt-5 container'>
-              <MyLoader/>
+              <MyLoader />
             </div>
           }>
             <Route exact path='/' component={HomePage} />
             <Route path='/shop' component={ShopPage} />
-            <Route exact path='/checkout' component={CheckoutPage}/>
+            <Route exact path='/checkout' component={CheckoutPage} />
             <Route
               exact
               path='/signin'

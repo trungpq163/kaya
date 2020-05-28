@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import CollectionItem2 from '../../components/collection-item/collection-item2.component';
+import ItemDetail from '../../components/item-details/item-details.component';
 import { selectCollection } from '../../redux/shop/shop.selector';
 import { LinkCustom } from './item.styles';
 
@@ -72,7 +73,7 @@ const ItemPage = ({ collection, history }) => {
               items
                 .filter(item => window.location.pathname === `/shop/${routeName}/${slugify(item.name)}`)
                 .map(item => (
-                  <CollectionItem2 key={item.id} item={item} route={location.pathname} />
+                  <ItemDetail key={item.id} item={item} route={location.pathname} />
                 ))
             }
           </div>

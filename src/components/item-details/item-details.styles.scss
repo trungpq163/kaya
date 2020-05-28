@@ -1,3 +1,81 @@
 .text {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.span-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.388888;
+  color: #333;
+}
+
+.text1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666;
+  padding-top: 23px;
+  padding-bottom: 10px;
+}
+
+.addItemButton {
+  justify-content: center;
+  -ms-align-items: center;
+  text-align: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.466667;
+  text-transform: uppercase;
+  color: #fff;
+  min-width: 161px;
+  height: 46px;
+  background-color: #717fe0;
+  border-radius: 23px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  padding-bottom: 1px;
+  margin-bottom: 50px;
+}
+
+.addItemButton:hover {
+  border-color: #222;
+  background-color: #222;
+  color: #fff;
+  padding-bottom: 1px;
+}
+
+.icon {
+  font-size: 18px;
+  color: #666;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  line-height: 1.0;
+  padding-left: 10px;
+  padding-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.icon:hover {
+  color: #717fe0;
+}
+
+.img-background {
+  width: 600px;
+  height: 600px;
+  background-attachment: fixed;
 }

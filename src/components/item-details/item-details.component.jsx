@@ -1,29 +1,37 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
+import { addItem } from '../../redux/cart/cart.actions';
+import { toast } from 'react-toastify';
 import './item-details.styles.scss';
 
-const ItemDetail = () => {
+const ItemDetail = ({ item, addItem }) => {
+  const { name, price, detail, imageUrl } = item;
+  const addItemFunc = (x) => addItem(x);
+  const toastItem = () => toast('Your item added successful :3');
   return (
     <div className="container">
       <div className="row">
         <div className="col-md-6 col-lg-7">
-          <img src="https://i.picsum.photos/id/688/500/300.jpg" alt="IMG-PRODUCT" />
+          <img className="img-background" src={imageUrl} alt="IMG-PRODUCT" />
         </div>
         <div className="col-md-6 col-lg-5">
           <div>
             <h4 className='text item-title'>
-              Lightweight Jacket
+              {name}
             </h4>
-            <span>
-              $58.79
+            <span className='span-price'>
+              ${price}
             </span>
-            <h4 className='text'>
-              Nulla eget sem vitae eros pharetra viverra. Nam vitae luctus ligula. Mauris consequat ornare feugiat.
+            <h4 className='text1'>
+              {detail}
             </h4>
-            
-            <button>Add to cart</button>
-
-
+            <button className='addItemButton' onClick={
+              () => {
+                addItemFunc(item);
+                toastItem();
+              }}>
+              Add to cart
+            </button>
             <div className="social-icon">
               <a href="#" className="icon" data-tooltip="Facebook">
                 <i className="fa fa-facebook" />
@@ -42,4 +50,11 @@ const ItemDetail = () => {
   );
 };
 
-export default ItemDetail;
+const mapDispatchToProps = dispatch => ({
+  addItem: item => dispatch(addItem(item))
+});
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(ItemDetail);
