@@ -24,6 +24,7 @@
     "react": "^16.13.1",
     "react-content-loader": "^5.0.4",
     "react-dom": "^16.13.1",
+    "react-facebook": "^8.1.4",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-stripe-checkout": "^2.6.3",

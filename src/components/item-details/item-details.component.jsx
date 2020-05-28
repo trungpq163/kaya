@@ -1,7 +1,12 @@
 import React from 'react';
+
+import CommentsFB from '../../components/comments/comments.component';
+
 import { connect } from 'react-redux';
 import { addItem } from '../../redux/cart/cart.actions';
+
 import { toast } from 'react-toastify';
+
 import './item-details.styles.scss';
 
 const ItemDetail = ({ item, addItem }) => {
@@ -10,7 +15,7 @@ const ItemDetail = ({ item, addItem }) => {
   const toastItem = () => toast('Your item added successful :3');
   return (
     <div className="container">
-      <div className="row">
+      <div className="row mb-6">
         <div className="col-md-6 col-lg-7">
           <img className="img-background" src={imageUrl} alt="IMG-PRODUCT" />
         </div>
@@ -46,6 +51,7 @@ const ItemDetail = ({ item, addItem }) => {
           </div>
         </div>
       </div>
+      <CommentsFB />
     </div>
   );
 };

@@ -10,6 +10,9 @@ module.exports = merge(common, {
     contentBase: './public',
     hot: true,
     historyApiFallback: true,
+    headers: {
+      'X-Frame-Options': 'sameorigin'
+    }
   },
   module: {
     rules: [{
