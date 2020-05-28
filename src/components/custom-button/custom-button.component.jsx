@@ -9,7 +9,7 @@ const CustomButton = ({ children, ...props }) => (
 );
 
 CustomButton.propTypes = {
-  children: PropTypes.string.isRequired
+  children: PropTypes.string
 };
 
 export default CustomButton;

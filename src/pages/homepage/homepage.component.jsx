@@ -17,22 +17,23 @@ import PropTypes from 'prop-types';
 import { HomePageContainer } from './homepage.styles';
 
 const HomePage = ({ currentUser }) => {
-  useEffect(() => {
-    toast('Welcome to my website!');
-  }, []);
+  if (currentUser !== null) {
+    useEffect(() => {
+      toast('Welcome to my website!');
+    }, []);
+  }
+
   return (
     <HomePageContainer>
-      {
-        currentUser !== null ? <ToastContainer /> : null
-      }
       <Carousel />
       <CollectionsOverview />
+      <ToastContainer />
     </HomePageContainer>
   );
 };
 
 HomePage.propTypes = {
-  currentUser: PropTypes.object.isRequired
+  currentUser: PropTypes.object
 }
 
 const mapStateToProps = createStructuredSelector({

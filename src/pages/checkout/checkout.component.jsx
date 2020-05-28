@@ -49,8 +49,8 @@ const CheckoutPage = ({ cartItems, total }) => (
 );
 
 CheckoutPage.propTypes = {
-  cartItems: PropTypes.array.isRequired,
-  total: PropTypes.number.isRequired
+  cartItems: PropTypes.array,
+  total: PropTypes.number
 }
 
 const mapStateToProps = createStructuredSelector({

@@ -23,7 +23,7 @@ const ShopPage = ({ match }) => (
 );
 
 ShopPage.propTypes = {
-  match: PropTypes.object.isRequired
+  match: PropTypes.object
 }
 
 export default ShopPage;

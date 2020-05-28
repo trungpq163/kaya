@@ -31,7 +31,7 @@ const StripeCheckoutButton = ({ price }) => {
 };
 
 StripeCheckoutButton.propTypes = {
-  price: PropTypes.number.isRequired
+  price: PropTypes.number
 };
 
 export default StripeCheckoutButton;

@@ -20,7 +20,7 @@ const CollectionsOverView = ({ collections }) => (
 );
 
 CollectionsOverView.propTypes = {
-  collections: PropTypes.array.isRequired
+  collections: PropTypes.array
 };
 
 const mapStateToProps = createStructuredSelector({

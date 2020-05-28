@@ -11,7 +11,7 @@ const FormInput = ({ handleChange, label, ...otherProps }) => (
       <label
         className={`${
           otherProps.value.length ? 'shrink' : ''
-        } form-input-label`}
+          } form-input-label`}
       >
         {label}
       </label>
@@ -20,8 +20,8 @@ const FormInput = ({ handleChange, label, ...otherProps }) => (
 );
 
 FormInput.propTypes = {
-  handleChange: PropTypes.func.isRequired,
-  label: PropTypes.string.isRequired
+  handleChange: PropTypes.func,
+  label: PropTypes.string
 };
 
 export default FormInput;

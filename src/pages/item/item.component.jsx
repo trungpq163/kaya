@@ -83,8 +83,8 @@ const ItemPage = ({ collection, history }) => {
 };
 
 ItemPage.propTypes = {
-  collection: PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired
+  collection: PropTypes.object,
+  history: PropTypes.object
 }
 
 /* {

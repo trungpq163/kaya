@@ -18,7 +18,7 @@ const CollectionPreview = ({ title, items, routeName }) => (
       }}
     >{title}</Link>
     {
-      window.location.pathname === '/shop' ? 
+      window.location.pathname === '/shop' ?
         (<div className="preview">
           <div className="container">
             <div className="row">
@@ -26,12 +26,12 @@ const CollectionPreview = ({ title, items, routeName }) => (
                 items
                   .filter((item, idx) => idx < 8)
                   .map(item => (
-                    <CollectionItem key={item.id} item={item} route={`/shop/${routeName}`}/>
+                    <CollectionItem key={item.id} item={item} route={`/shop/${routeName}`} />
                   ))
               }
             </div>
           </div>
-        </div>) : 
+        </div>) :
         (<div className="preview">
           <div className="container">
             <div className="row">
@@ -39,7 +39,7 @@ const CollectionPreview = ({ title, items, routeName }) => (
                 items
                   .filter((item, idx) => idx < 4)
                   .map(item => (
-                    <CollectionItem key={item.id} item={item} route={`/shop/${routeName}`}/>
+                    <CollectionItem key={item.id} item={item} route={`/shop/${routeName}`} />
                   ))
               }
             </div>
@@ -51,9 +51,9 @@ const CollectionPreview = ({ title, items, routeName }) => (
 );
 
 CollectionPreview.propTypes = {
-  title: PropTypes.string.isRequired,
-  items: PropTypes.array.isRequired,
-  routeName: PropTypes.string.isRequired
+  title: PropTypes.string,
+  items: PropTypes.array,
+  routeName: PropTypes.string
 };
 
 export default CollectionPreview;

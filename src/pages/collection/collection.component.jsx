@@ -66,8 +66,8 @@ const CollectionPage = ({ collection, history }) => {
 };
 
 CollectionPage.propTypes = {
-  collection: PropTypes.object.isRequired,
-  history: PropTypes.object.isRequired
+  collection: PropTypes.object,
+  history: PropTypes.object
 }
 
 const mapStateToProps = (state, ownProps) => ({

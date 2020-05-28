@@ -13,7 +13,7 @@ import './cart-dropdown.styles.scss';
 import PropTypes from 'prop-types';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => {
-  
+
   return (
     <div className='cart-dropdown'>
       <div className="cart-items">
@@ -23,8 +23,8 @@ const CartDropdown = ({ cartItems, history, dispatch }) => {
               <CartItem key={cartItem.id} item={cartItem} />
             ))
           ) : (
-            <span className="empty-message">Giỏ hàng của bạn đang trống!</span>
-          )
+              <span className="empty-message">Giỏ hàng của bạn đang trống!</span>
+            )
         }
       </div>
       <CustomButton
@@ -38,9 +38,9 @@ const CartDropdown = ({ cartItems, history, dispatch }) => {
 };
 
 CartDropdown.propTypes = {
-  cartItems: PropTypes.array.isRequired,
-  history: PropTypes.object.isRequired,
-  dispatch: PropTypes.func.isRequired
+  cartItems: PropTypes.array,
+  history: PropTypes.object,
+  dispatch: PropTypes.func
 };
 
 const mapStateToProps = createStructuredSelector({

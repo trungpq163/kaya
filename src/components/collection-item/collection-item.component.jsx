@@ -14,7 +14,7 @@ const CollectionItem = ({ item, addItem }) => {
   return (
     <div className="collection-item">
       <div
-        className="image" 
+        className="image"
         style={{
           backgroundImage: `url(${imageUrl})`
         }}
@@ -35,8 +35,8 @@ const CollectionItem = ({ item, addItem }) => {
 };
 
 CollectionItem.propTypes = {
-  item: PropTypes.object.isRequired,
-  addItem: PropTypes.func.isRequired
+  item: PropTypes.object,
+  addItem: PropTypes.func
 };
 
 const mapDispatchToProps = dispatch => ({

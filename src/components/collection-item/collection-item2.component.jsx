@@ -48,7 +48,7 @@ const CollectionItem2 = ({ item, addItem, route }) => {
           </h3>
           <div className="price">
             ${price}
-            <span>${price + price*1/5}</span>
+            <span>${price + price * 1 / 5}</span>
           </div>
           <Link className="add-to-cart"
             to='#'
@@ -57,7 +57,7 @@ const CollectionItem2 = ({ item, addItem, route }) => {
                 addItemFunc(item);
                 toastItem();
               }
-            }       
+            }
           >
             + Add To Cart
           </Link>
@@ -68,9 +68,9 @@ const CollectionItem2 = ({ item, addItem, route }) => {
 };
 
 CollectionItem2.propTypes = {
-  item: PropTypes.object.isRequired,
-  addItem: PropTypes.func.isRequired,
-  route: PropTypes.string.isRequired
+  item: PropTypes.object,
+  addItem: PropTypes.func,
+  route: PropTypes.string
 };
 
 const mapDispatchToProps = dispatch => ({

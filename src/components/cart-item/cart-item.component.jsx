@@ -19,7 +19,7 @@ const CartItem = ({ item: { imageUrl, price, name, quantity } }) => (
 );
 
 CartItem.propTypes = {
-  item: PropTypes.object.isRequired
+  item: PropTypes.object
 };
 
 export default CartItem;

@@ -133,7 +133,7 @@ const Navbar = ({ currentUser, hidden }) => {
 
 Navbar.propTypes = {
   currentUser: PropTypes.object,
-  hidden: PropTypes.bool.isRequired
+  hidden: PropTypes.bool
 };
 
 const mapStateToProps = createStructuredSelector({
