@@ -61,6 +61,11 @@ const Navbar = ({ currentUser, hidden }) => {
                     </OptionLink>
                   </li>
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
+                    <OptionLink to='/search' className="nav-link">
+                      Search
+                    </OptionLink>
+                  </li>
+                  <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <a
                       className="nav-link dropdown-toggle"
                       data-toggle="dropdown"
@@ -103,14 +108,14 @@ const Navbar = ({ currentUser, hidden }) => {
                           className="nav-link"
                           onClick={signOut}
                         >
-                          Logout
+                          LogOut
                         </OptionLink>
                       ) : (
                           <OptionLink
                             className="nav-link"
                             to='/signin'
                           >
-                            Signin
+                            SignIn
                           </OptionLink>
 
                         )

@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import { addItem } from '../../redux/cart/cart.actions';
 
 import './collection-item2.styles.scss';
+
+import MyLoader from '../content-loader/content-loader.component';
 
 import { toast } from 'react-toastify';
 
@@ -26,15 +31,21 @@ const CollectionItem2 = ({ item, addItem, route }) => {
           <Link
             to={`${route}/${slugify(name)}`}
           >
-            <img
+            <LazyLoadImage
               className="pic-1"
               src={imageUrl}
               alt="img"
+              effect="blur"
+              width="253"
+              height="295.141"
             />
-            <img
+            <LazyLoadImage
               className="pic-2"
               src={imageUrl}
               alt="img"
+              effect="blur"
+              width="253"
+              height="295.141"
             />
           </Link>
           <span className="product-new-label">Sale</span>

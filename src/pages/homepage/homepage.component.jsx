@@ -10,6 +10,8 @@ import { createStructuredSelector } from 'reselect';
 
 import { ToastContainer, toast } from 'react-toastify';
 
+import MyLoader from '../../components/content-loader/content-loader.component';
+
 import 'react-toastify/dist/ReactToastify.css';
 
 import PropTypes from 'prop-types';

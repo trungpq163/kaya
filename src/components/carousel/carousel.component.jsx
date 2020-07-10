@@ -48,7 +48,7 @@ class Example extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="http://i.imgur.com/8YI2oUe.png" 
+            src="http://i.imgur.com/8YI2oUe.png"
             alt="Third slide"
           />
         </Carousel.Item>
@@ -60,7 +60,7 @@ class Example extends Component {
 const CarouselComponent = () => {
   return (
     <div className='container pt-5 mt-5 pb-5 mb-5'>
-      <Example/>
+      <Example />
     </div>
   );
 };

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { Link } from 'react-router-dom';
-import CollectionItem from '../collection-item/collection-item2.component';
+// import CollectionItem from '../collection-item/collection-item2.component';
+const CollectionItem = lazy(() => import('../collection-item/collection-item2.component'));
 
 import PropTypes from 'prop-types';
+
+import MyLoader from '../content-loader/content-loader.component';
 
 import './collection-preview.styles.scss';
 

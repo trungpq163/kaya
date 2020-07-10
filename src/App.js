@@ -16,6 +16,9 @@ const SignInAndSignUpPage = lazy(() => import('./pages/sign-in-and-sign-up/sign-
 // import CheckoutPage from './pages/checkout/checkout.component';
 const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
 
+// import SearchPage from './pages/search/search.component';
+const SearchPage = lazy(() => import('./pages/search/search.component'));
+
 import Navbar from './components/navbar/navbar.component';
 
 const Footer = lazy(() => import('./components/footer/footer.component'));
@@ -65,6 +68,7 @@ class App extends React.Component {
             <Route exact path='/' component={HomePage} />
             <Route path='/shop' component={ShopPage} />
             <Route exact path='/checkout' component={CheckoutPage} />
+            <Route exact path='/search' component={SearchPage} />
             <Route
               exact
               path='/signin'

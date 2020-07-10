@@ -12,6 +12,7 @@
   "dependencies": {
     "@babel/runtime": "^7.9.2",
     "@bit/bondz.react-epic-spinners.atom-spinner": "^0.3.0",
+    "@bit/design-system.klipfolio-www.base-search-input": "file:./components/base-search-input",
     "@bit/react-bootstrap.react-bootstrap.carousel": "^1.0.0",
     "@bit/reactstrap.reactstrap.uncontrolled-carousel": "^7.1.0",
     "@brainhubeu/react-carousel": "^1.13.26",
@@ -25,6 +26,7 @@
     "react-content-loader": "^5.0.4",
     "react-dom": "^16.13.1",
     "react-facebook": "^8.1.4",
+    "react-lazy-load-image-component": "^1.5.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.1.2",
     "react-stripe-checkout": "^2.6.3",
@@ -32,6 +34,7 @@
     "redux": "^4.0.5",
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
+    "remove-accents": "^0.4.2",
     "reselect": "^4.0.0",
     "shortid": "^2.2.15",
     "slugify": "^1.4.0",
