@@ -12,7 +12,6 @@
   "dependencies": {
     "@babel/runtime": "^7.9.2",
     "@bit/bondz.react-epic-spinners.atom-spinner": "^0.3.0",
-    "@bit/design-system.klipfolio-www.base-search-input": "file:./components/base-search-input",
     "@bit/react-bootstrap.react-bootstrap.carousel": "^1.0.0",
     "@bit/reactstrap.reactstrap.uncontrolled-carousel": "^7.1.0",
     "@brainhubeu/react-carousel": "^1.13.26",
