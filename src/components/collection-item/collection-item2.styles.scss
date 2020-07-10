@@ -1,4 +1,6 @@
 .product-grid {
+  width: 253px;
+  height: 369.141px;
   font-family: sans-serif;
   text-align: center;
   padding: 0 0 72px;
@@ -215,11 +217,7 @@
   font-weight: 600;
 }
 
-@media only screen and (max-width: 990px) {
-  .product-grid {
-    margin-bottom: 30px;
-  }
-}
+
 
 @media only screen and (min-width: 300px) {
   .product-grid .product-image img {
@@ -237,6 +235,12 @@
 @media only screen and (min-width: 768px) {
   .product-grid .product-image img {
     height: 242.656px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .product-grid {
+    margin-bottom: 30px;
   }
 }
 

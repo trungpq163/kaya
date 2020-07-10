@@ -1,8 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { connect } from 'react-redux';
 
-import Carousel from '../../components/carousel/carousel.component';
-import CollectionsOverview from '../../components/collection-overview/collection-overview.component';
+// import Carousel from '../../components/carousel/carousel.component';
+const Carousel = lazy(() => import('../../components/carousel/carousel.component'));
+// import CollectionsOverview from '../../components/collection-overview/collection-overview.component';
+const CollectionsOverview = lazy(() => import('../../components/collection-overview/collection-overview.component'));
 
 import { selectCurrentUser } from '../../redux/user/user.selectors';
 
@@ -27,8 +29,14 @@ const HomePage = ({ currentUser }) => {
 
   return (
     <HomePageContainer>
-      <Carousel />
-      <CollectionsOverview />
+      <Suspense fallback={
+        <div className='mt-5 pt-5 container'>
+          <MyLoader />
+        </div>
+      }>
+        <Carousel />
+        <CollectionsOverview />
+      </Suspense>
       <ToastContainer />
     </HomePageContainer>
   );

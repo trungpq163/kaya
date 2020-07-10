@@ -17,6 +17,8 @@ import PropTypes from 'prop-types';
 
 import slugify from 'slugify';
 
+import LazyLoadImg from '../../components/lazyload-image/lazyload-image.component';
+
 const CollectionItem2 = ({ item, addItem, route }) => {
   const { name, price, imageUrl } = item;
 
@@ -31,21 +33,10 @@ const CollectionItem2 = ({ item, addItem, route }) => {
           <Link
             to={`${route}/${slugify(name)}`}
           >
-            <LazyLoadImage
+            <LazyLoadImg
               className="pic-1"
-              src={imageUrl}
+              url={imageUrl}
               alt="img"
-              effect="blur"
-              width="253"
-              height="295.141"
-            />
-            <LazyLoadImage
-              className="pic-2"
-              src={imageUrl}
-              alt="img"
-              effect="blur"
-              width="253"
-              height="295.141"
             />
           </Link>
           <span className="product-new-label">Sale</span>
