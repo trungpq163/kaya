@@ -71,15 +71,15 @@ class SignUp extends React.Component {
           style={{
             fontSize: '1.4rem'
           }}
-        >Not have a account!</h2>
-        <span>Sign up now!</span>
+        >Chưa có tài khoản!</h2>
+        <span>Đăng kí ngay!</span>
         <form className='sign-up-form' onSubmit={this.handleSubmit}>
           <FormInput
             type='text'
             name='displayName'
             value={displayName}
             onChange={this.handleChange}
-            label='Display Name'
+            label='tên hiển thị'
             required
           />
           <FormInput
@@ -87,7 +87,7 @@ class SignUp extends React.Component {
             name='email'
             value={email}
             onChange={this.handleChange}
-            label='Email'
+            label='email'
             required
           />
           <FormInput
@@ -95,7 +95,7 @@ class SignUp extends React.Component {
             name='password'
             value={password}
             onChange={this.handleChange}
-            label='Password'
+            label='mật khẩu'
             required
           />
           <FormInput
@@ -103,10 +103,10 @@ class SignUp extends React.Component {
             name='confirmPassword'
             value={confirmPassword}
             onChange={this.handleChange}
-            label='Confirm Password'
+            label='xác nhận mật khẩu'
             required
           />
-          <CustomButton type='submit'>Sign up</CustomButton>
+          <CustomButton type='submit'>Đăng kí</CustomButton>
         </form>
       </div>
     );

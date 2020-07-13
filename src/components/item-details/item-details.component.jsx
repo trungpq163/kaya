@@ -7,17 +7,25 @@ import { addItem } from '../../redux/cart/cart.actions';
 
 import { toast } from 'react-toastify';
 
+import LazyLoadImgDetails from '../lazyload-image-details/lazyload-image-details.component';
+
+import { format } from 'number-currency-format';
+
 import './item-details.styles.scss';
 
 const ItemDetail = ({ item, addItem }) => {
   const { name, price, detail, imageUrl } = item;
   const addItemFunc = (x) => addItem(x);
-  const toastItem = () => toast('Your item added successful :3');
+  const toastItem = () => toast('Sản phẩm đã được thêm vào giỏ hàng :3');
   return (
     <div className="container">
       <div className="row mb-6">
         <div className="col-md-6 col-lg-7">
-          <img className="img-background" src={imageUrl} alt="IMG-PRODUCT" />
+          <LazyLoadImgDetails
+            className="img-background"
+            url={imageUrl}
+            alt="img"
+          />
         </div>
         <div className="col-md-6 col-lg-5">
           <div>
@@ -25,7 +33,7 @@ const ItemDetail = ({ item, addItem }) => {
               {name}
             </h4>
             <span className='span-price'>
-              ${price}
+              {format(price * 1000, { decimalsDigits: 0, decimalSeparator: '', thousandSeparator: '.' })}₫
             </span>
             <h4 className='text1'>
               {detail}
@@ -35,7 +43,7 @@ const ItemDetail = ({ item, addItem }) => {
                 addItemFunc(item);
                 toastItem();
               }}>
-              Add to cart
+              Thêm vào giỏ hàng
             </button>
             <div className="social-icon">
               <a href="#" className="icon" data-tooltip="Facebook">

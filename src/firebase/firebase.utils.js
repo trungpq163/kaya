@@ -18,7 +18,7 @@ const config = {
 firebase.initializeApp(config);
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
-  if (!userAuth) {return;}
+  if (!userAuth) { return; }
 
   const userRef = firestore.doc(`users/${userAuth.uid}`);
 
@@ -48,11 +48,11 @@ export const firestore = firebase.firestore();
 const provider = new firebase.auth.GoogleAuthProvider();
 provider.setCustomParameters({ prompt: 'select_account' });
 export const signInWithGoogle = () => auth.signInWithPopup(provider)
-  .then(() => toast('Horay, No Bug, Login Successful!'))
-  .catch((err) => toast('Login Failed', err));
+  .then(() => toast('Đăng nhập thành công!'))
+  .catch((err) => toast('Đăng nhập thất bại', err));
 
 export const signOut = () => auth.signOut()
-  .then(() => toast('Logout Successful!'))
-  .catch((err) => toast('Logout Failed :<', err));
+  .then(() => toast('Đăng xuất thành công!'))
+  .catch((err) => toast('Đăng xuất thất bại :<', err));
 
 export default firebase;

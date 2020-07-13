@@ -5,6 +5,8 @@ import { createStructuredSelector } from 'reselect';
 import CheckoutItem from '../../components/checkout-item/checkout-item.component';
 import StripeCheckoutButton from '../../components/stripe-button/stripe-button.component';
 
+import { format } from 'number-currency-format';
+
 import PropTypes from 'prop-types';
 
 import {
@@ -43,8 +45,8 @@ const CheckoutPage = ({ cartItems, total }) => (
       <br />
        4242 4242 4242 4242 - Exp: 05/20 - CVV: 123
     </div>
-    <div className="total">Tổng: ${total}</div>
-    <StripeCheckoutButton price={total} />
+    <div className="total">Tổng: {format(total * 1000, { decimalsDigits: 0, decimalSeparator: '', thousandSeparator: '.' })}₫</div>
+    <StripeCheckoutButton price={format(total * 1000, { decimalsDigits: 0, decimalSeparator: '', thousandSeparator: '.' })} />
   </div>
 );
 

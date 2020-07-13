@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-
+import { format } from 'number-currency-format';
 import {
   clearItemFromCart,
   addItem,
@@ -25,7 +25,9 @@ const CheckoutItem = ({ cartItem: { name, imageUrl, price, quantity }, clearItem
       <div className="arrow" onClick={() => addItem(cartItem)}
       >&#10095;</div>
     </span>
-    <span className="price">{price}</span>
+    <span className="price">{
+      format(price * 1000, { decimalsDigits: 0, decimalSeparator: '', thousandSeparator: '.' })
+    }₫</span>
     <div className="remove-button" onClick={() => clearItem(cartItem)}
     >&#10005;</div>
   </div>
@@ -35,7 +37,7 @@ CheckoutItem.propTypes = {
   cartItem: PropTypes.object,
   name: PropTypes.string,
   imageUrl: PropTypes.string,
-  price: PropTypes.number,
+  price: PropTypes.any,
   quantity: PropTypes.number,
   clearItem: PropTypes.func,
   addItem: PropTypes.func,

@@ -52,7 +52,7 @@ const Navbar = ({ currentUser, hidden }) => {
                 <ul className="navbar-nav ml-auto py-4 py-md-0">
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <OptionLink to='/' className="nav-link">
-                      Home
+                      Trang chủ
                     </OptionLink>
                   </li>
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -62,7 +62,7 @@ const Navbar = ({ currentUser, hidden }) => {
                   </li>
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
                     <OptionLink to='/search' className="nav-link">
-                      Search
+                      Tìm kiếm
                     </OptionLink>
                   </li>
                   <li className="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
@@ -74,7 +74,7 @@ const Navbar = ({ currentUser, hidden }) => {
                       aria-haspopup="true"
                       aria-expanded="false"
                     >
-                      Genre
+                      Thể loại
                     </a>
                     <div className="dropdown-menu">
                       <OptionLink to='/shop/hats' className="dropdown-item">
@@ -104,20 +104,19 @@ const Navbar = ({ currentUser, hidden }) => {
                     {
                       currentUser ? (
                         <OptionLink
-                          as='div'
                           className="nav-link"
                           onClick={signOut}
+                          to='#'
                         >
-                          LogOut
+                          Đăng xuất
                         </OptionLink>
                       ) : (
                           <OptionLink
                             className="nav-link"
                             to='/signin'
                           >
-                            SignIn
+                            Đăng nhập
                           </OptionLink>
-
                         )
                     }
                   </li>

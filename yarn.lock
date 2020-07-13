@@ -5803,6 +5803,11 @@ nth-check@^1.0.2, nth-check@~1.0.1:
   dependencies:
     boolbase "~1.0.0"
 
+number-currency-format@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/number-currency-format/-/number-currency-format-1.0.10.tgz#2c044c7169c98185ac11ee66bff768bbfc4420ee"
+  integrity sha512-5bTUby6+WBtOgbiPI0Kiu6Tf8kpwkVfE4/jOFUAFqPivy5kDz4H4DcOF+fO4GLaHLtei4djuryMrxVShw4bB4w==
+
 number-is-nan@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/number-is-nan/-/number-is-nan-1.0.1.tgz#097b602b53422a522c1afb8790318336941a011d"

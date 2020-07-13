@@ -23,7 +23,7 @@ import { HomePageContainer } from './homepage.styles';
 const HomePage = ({ currentUser }) => {
   if (currentUser !== null) {
     useEffect(() => {
-      toast('Welcome to my website!');
+      toast('Chào mừng bạn đã trở lại! <3');
     }, []);
   }
 

@@ -27,8 +27,8 @@ class SignIn extends React.Component {
 
     const { email, password } = this.state;
 
-    try {   
-      await auth.signInWithEmailAndPassword(email, password);    
+    try {
+      await auth.signInWithEmailAndPassword(email, password);
       debugger;
       this.setState({ email: '', password: '' });
     } catch (error) {
@@ -49,8 +49,8 @@ class SignIn extends React.Component {
           style={{
             fontSize: '1.4rem'
           }}
-        >Already have an account!</h2>
-        <span>Sign in now!</span>
+        >Đã có tài khoản!</h2>
+        <span>Đăng nhập ngay!</span>
 
         <form onSubmit={this.handleSubmit}>
           <FormInput
@@ -66,7 +66,7 @@ class SignIn extends React.Component {
             type='password'
             value={this.state.password}
             handleChange={this.handleChange}
-            label='password'
+            label='mật khẩu'
             required
           />
           <div className='buttons'
@@ -77,7 +77,7 @@ class SignIn extends React.Component {
             }}
           >
             <CustomButton type='submit'
-            > Sign in </CustomButton>            
+            > Đăng nhập </CustomButton>
             <ToastContainer />
             <Link
               to='/forgot'
@@ -88,7 +88,7 @@ class SignIn extends React.Component {
                 alignItems: "center"
               }}
             >
-            Forgot a password?
+              Quên mật khẩu?
             </Link>
           </div>
         </form>
@@ -97,8 +97,8 @@ class SignIn extends React.Component {
             marginTop: '1rem'
           }}
           onClick={signInWithGoogle} isGoogleSignIn>
-          Sign in with Google
-        </CustomButton> 
+          Đăng nhập với Google
+        </CustomButton>
       </div>
     );
   }

@@ -7,9 +7,9 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { addItem } from '../../redux/cart/cart.actions';
 
-import './collection-item2.styles.scss';
+import { format } from 'number-currency-format';
 
-import MyLoader from '../content-loader/content-loader.component';
+import './collection-item2.styles.scss';
 
 import { toast } from 'react-toastify';
 
@@ -24,11 +24,11 @@ const CollectionItem2 = ({ item, addItem, route }) => {
 
   const addItemFunc = (x) => addItem(x);
 
-  const toastItem = () => toast('Your item added successful :3');
+  const toastItem = () => toast('Sản phẩm đã được thêm vào giỏ hàng :3');
 
   return (
     <div className="col-md-3 col-sm-6 col-xs-6">
-      
+
       <div className="product-grid">
         <div className="product-image">
           <Link
@@ -50,8 +50,8 @@ const CollectionItem2 = ({ item, addItem, route }) => {
             >{name}</Link>
           </h3>
           <div className="price">
-            ${price}
-            <span>${price + price * 1 / 5}</span>
+            {format(price * 1000, { decimalsDigits: 0, decimalSeparator: '', thousandSeparator: '.' })}₫
+            <span>{format((price + price * 1 / 5) * 1000, { decimalsDigits: 0, decimalSeparator: '', thousandSeparator: '.' })}₫</span>
           </div>
           <Link className="add-to-cart"
             to='#'
@@ -62,7 +62,7 @@ const CollectionItem2 = ({ item, addItem, route }) => {
               }
             }
           >
-            + Add To Cart
+            + Thêm vào giỏ hàng
           </Link>
         </div>
       </div>

@@ -74,8 +74,13 @@
   color: #717fe0;
 }
 
-.img-background {
+// .img-background {
+//   width: 560px;
+//   height: 302px;
+//   background-attachment: fixed;
+// }
+
+.lazy-load-image-background img {
   width: 560px;
-  height: 302px;
-  background-attachment: fixed;
+  height: 320px;
 }
