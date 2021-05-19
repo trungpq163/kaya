@@ -1,4 +1,4 @@
-## Kaya Project (Do An Co So)
+## Kaya Project 
 ### How to run
 1. Be sure installed nodejs & yarn
 2. For install project in terminal let type `yarn` and enter
